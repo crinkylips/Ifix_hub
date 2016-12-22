@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.parse.starter.MainMenuActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ilogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/buttonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/JobsSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showJobsSheet"
+            android:text="@string/jobs_list"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle,SmallSp" />
+
+        <Button
+            android:id="@+id/forSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showForSale"
+            android:text="@string/for_sale"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/toDoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showToDoList"
+            android:text="@string/to_do_list"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/Parts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showParts"
+            android:text="@string/parts"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/timeSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showTimeSheet"
+            android:text="@string/time_sheet"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/training"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showTraining"
+            android:text="@string/training"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/cashUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showCashUp"
+            android:text="@string/cash_up"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+            tools:ignore="ButtonStyle"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
