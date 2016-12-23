@@ -96,7 +96,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
 //
     public void showParts(View view)
     {
-        Intent i = new Intent(this, FavPartsAdapter.class);
+        Intent i = new Intent(this, MainPartsActivity.class);
         startActivity(i);
     }
 
